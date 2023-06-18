@@ -140,7 +140,7 @@ app.post("/api/cek_token", (req, res) => {
   console.log(data);
 });
 
-app.post("/api/tampil_mahasiswa", (req, res) => {
+app.post("/api/tampil_mhsw", (req, res) => {
   console.log("Tampil Data Mahasiswa");
   let data = {
     token: req.body.token,
@@ -344,8 +344,8 @@ app.post("/api/tambah_mhsw", (req, res) => {
   console.log(data);
 });
 
-app.post("/api/ubah_datap", (req, res) => {
-  console.log("Ubah Data Pendidikan");
+app.post("/api/ubah_mhsw", (req, res) => {
+  console.log("Ubah Data Mahasiswa");
   let data = {
     token: req.body.token,
     nim : req.body.nim,
@@ -449,8 +449,8 @@ app.post("/api/ubah_datap", (req, res) => {
   console.log(data);
 });
 
-app.post("/api/hapus_datap", (req, res) => {
-  console.log("Hapus Data Pendidikan");
+app.post("/api/hapus_mhsw", (req, res) => {
+  console.log("Hapus Data Mahasiswa");
   let data = {
     token: req.body.token,
     nim : req.body.nim,

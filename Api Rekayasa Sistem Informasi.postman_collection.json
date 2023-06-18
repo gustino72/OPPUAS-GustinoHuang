@@ -7,10 +7,10 @@
 	},
 	"item": [
 		{
-			"name": "Pengguna",
+			"name": "Mahasiswa",
 			"item": [
 				{
-					"name": "Tambah Data Pengguna",
+					"name": "Tambah Data Mahasiswa",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -23,29 +23,29 @@
 									"type": "text"
 								},
 								{
-									"key": "namapengguna",
-									"value": "JeanRiko",
+									"key": "nim",
+									"value": "21010101",
 									"type": "text"
 								},
 								{
-									"key": "sandipengguna",
-									"value": "riko",
+									"key": "nama_mh",
+									"value": "Peter B. Parker",
 									"type": "text"
 								},
 								{
-									"key": "level_akses",
-									"value": "Admin",
+									"key": "jenis_kelamin",
+									"value": "Laki-Laki",
 									"type": "text"
 								},
 								{
-									"key": "status_akun",
-									"value": "Aktif",
+									"key": "tgl_lahir",
+									"value": "2001-08-14",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/tambah_pengguna",
+							"raw": "http://localhost:81/api/tambah_mhsw",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -53,14 +53,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"tambah_pengguna"
+								"tambah_mhsw"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Ubah Data Pengguna",
+					"name": "Ubah Data Mahasiswa",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -73,29 +73,29 @@
 									"type": "text"
 								},
 								{
-									"key": "namapengguna",
-									"value": "JeanRiko",
+									"key": "nim",
+									"value": "21010101",
 									"type": "text"
 								},
 								{
-									"key": "sandipengguna",
-									"value": "riko",
+									"key": "nama_mh",
+									"value": "Peter B. Parker",
 									"type": "text"
 								},
 								{
-									"key": "level_akses",
-									"value": "Admin",
+									"key": "jenis_kelamin",
+									"value": "Laki-Laki",
 									"type": "text"
 								},
 								{
-									"key": "status_akun",
-									"value": "Aktif",
+									"key": "tgl_lahir",
+									"value": "2001-08-14",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/ubah_pengguna",
+							"raw": "http://localhost:81/api/ubah_mhsw",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -103,14 +103,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"ubah_pengguna"
+								"ubah_mhsw"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Hapus Data Pengguna",
+					"name": "Hapus Data Mahasiswa",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -123,14 +123,14 @@
 									"type": "text"
 								},
 								{
-									"key": "namapengguna",
-									"value": "JeanRiko1",
+									"key": "nim",
+									"value": "210101011",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/hapus_pengguna",
+							"raw": "http://localhost:81/api/hapus_mhsw",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -138,14 +138,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"hapus_pengguna"
+								"hapus_mhsw"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Tampil Data Pengguna",
+					"name": "Tampil Data Mahasiswa",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -165,7 +165,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/tampil_pengguna",
+							"raw": "http://localhost:81/api/tampil_mhsw",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -173,14 +173,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"tampil_pengguna"
+								"tampil_mhsw"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Login Data Pengguna",
+					"name": "Login Data Mahasiswa",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -193,19 +193,19 @@
 									"type": "text"
 								},
 								{
-									"key": "namapengguna",
-									"value": "JeanRiko",
+									"key": "nim",
+									"value": "21010101",
 									"type": "text"
 								},
 								{
-									"key": "sandipengguna",
-									"value": "riko",
+									"key": "nama_mh",
+									"value": "Peter B. Parker",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/login_pengguna",
+							"raw": "http://localhost:81/api/login_mhsw",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -213,7 +213,7 @@
 							"port": "81",
 							"path": [
 								"api",
-								"login_pengguna"
+								"login_mhsw"
 							]
 						}
 					},
@@ -222,10 +222,10 @@
 			]
 		},
 		{
-			"name": "Pasien",
+			"name": "Dosen",
 			"item": [
 				{
-					"name": "Tambah Data Pasien",
+					"name": "Tambah Data Dosen",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -238,39 +238,29 @@
 									"type": "text"
 								},
 								{
-									"key": "nomr",
-									"value": "1033",
+									"key": "nidn",
+									"value": "9137528460",
 									"type": "text"
 								},
 								{
-									"key": "namapasien",
-									"value": "AAAAA",
+									"key": "nama_ds",
+									"value": "Joseph Joestar",
 									"type": "text"
 								},
 								{
-									"key": "jeniskelamin",
-									"value": "Laki-Laki",
+									"key": "no_telp",
+									"value": "628126699269",
 									"type": "text"
 								},
 								{
-									"key": "tgllahir",
-									"value": "1995-08-08",
-									"type": "text"
-								},
-								{
-									"key": "alamat",
-									"value": "Jalan",
-									"type": "text"
-								},
-								{
-									"key": "nohp",
-									"value": "787897897",
+									"key": "mata_kuliah",
+									"value": "Bahasa Indonesia",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/tambah_pasien",
+							"raw": "http://localhost:81/api/tambah_dosen",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -278,14 +268,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"tambah_pasien"
+								"tambah_dosen"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Ubah Data Pasien",
+					"name": "Ubah Data Dosen",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -298,39 +288,29 @@
 									"type": "text"
 								},
 								{
-									"key": "nomr",
-									"value": "1033",
+									"key": "nidn",
+									"value": "9137528460",
 									"type": "text"
 								},
 								{
-									"key": "namapasien",
-									"value": "AAAAA",
+									"key": "nama_ds",
+									"value": "Joseph Joestar",
 									"type": "text"
 								},
 								{
-									"key": "jeniskelamin",
-									"value": "Laki-Laki",
+									"key": "no_telp",
+									"value": "628126699269",
 									"type": "text"
 								},
 								{
-									"key": "tgllahir",
-									"value": "1995-08-08",
-									"type": "text"
-								},
-								{
-									"key": "alamat",
-									"value": "Jalan",
-									"type": "text"
-								},
-								{
-									"key": "nohp",
-									"value": "787897897",
+									"key": "mata_kuliah",
+									"value": "Bahasa Indonesia",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/ubah_pasien",
+							"raw": "http://localhost:81/api/ubah_dosen",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -338,14 +318,14 @@
 							"port": "81",
 							"path": [
 								"api",
-								"ubah_pasien"
+								"ubah_dosen"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Hapus Data Pasien",
+					"name": "Hapus Data Dosen",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -358,14 +338,14 @@
 									"type": "text"
 								},
 								{
-									"key": "nomr",
-									"value": "1033",
+									"key": "nidn",
+									"value": "9137528460",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:81/api/hapus_pasien",
+							"raw": "http://localhost:81/api/hapus_dosen",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -373,7 +353,7 @@
 							"port": "81",
 							"path": [
 								"api",
-								"hapus_pasien"
+								"hapus_dosen"
 							]
 						}
 					},
@@ -381,246 +361,7 @@
 				}
 			]
 		},
-		{
-			"name": "Berobat",
-			"item": [
-				{
-					"name": "Tambah Data Berobat",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "token",
-									"value": "RekayasaPerangkatLunak",
-									"type": "text"
-								},
-								{
-									"key": "nomr",
-									"value": "1033",
-									"type": "text"
-								},
-								{
-									"key": "tglberobat",
-									"value": "2023-06-06",
-									"type": "text"
-								},
-								{
-									"key": "statusberobat",
-									"value": "Kontrol",
-									"type": "text"
-								},
-								{
-									"key": "namapengguna",
-									"value": "Riko",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:81/api/tambah_berobat",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "81",
-							"path": [
-								"api",
-								"tambah_berobat"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Staff",
-			"item": [
-				{
-					"name": "Tambah Data Staff",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "token",
-									"value": "RekayasaPerangkatLunak",
-									"type": "text"
-								},
-								{
-									"key": "kodestaff",
-									"value": "101",
-									"type": "text"
-								},
-								{
-									"key": "namastaff",
-									"value": "AAAAA",
-									"type": "text"
-								},
-								{
-									"key": "jabatanstaff",
-									"value": "Perawat",
-									"type": "text"
-								},
-								{
-									"key": "namapengguna",
-									"value": "JeanRiko",
-									"type": "text"
-								},
-								{
-									"key": "tgllahirstaff",
-									"value": "2000-01-01",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:81/api/tambah_staff",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "81",
-							"path": [
-								"api",
-								"tambah_staff"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Ubah Data Staff",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "token",
-									"value": "RekayasaPerangkatLunak",
-									"type": "text"
-								},
-								{
-									"key": "kodestaff",
-									"value": "101",
-									"type": "text"
-								},
-								{
-									"key": "namastaff",
-									"value": "AAAAA",
-									"type": "text"
-								},
-								{
-									"key": "jabatanstaff",
-									"value": "Perawat",
-									"type": "text"
-								},
-								{
-									"key": "namapengguna",
-									"value": "JeanRiko",
-									"type": "text"
-								},
-								{
-									"key": "tgllahirstaff",
-									"value": "2000-01-01",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:81/api/ubah_staff",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "81",
-							"path": [
-								"api",
-								"ubah_staff"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Hapus Data Staff",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "token",
-									"value": "RekayasaPerangkatLunak",
-									"type": "text"
-								},
-								{
-									"key": "kodestaff",
-									"value": "101",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:81/api/hapus_staff",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "81",
-							"path": [
-								"api",
-								"hapus_staff"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Tampil Data Staff",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "token",
-									"value": "RekayasaPerangkatLunak",
-									"type": "text"
-								},
-								{
-									"key": "input_cari",
-									"value": "",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:81/api/tampil_staff",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "81",
-							"path": [
-								"api",
-								"tampil_staff"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
+		
 		{
 			"name": "Cek Token",
 			"request": {
