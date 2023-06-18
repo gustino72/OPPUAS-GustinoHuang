@@ -31,7 +31,7 @@ USE `college`;
 --
 
 DROP TABLE IF EXISTS `tb_mahasiswa`;
-CREATE TABLE `tb_mahasiwa` (
+CREATE TABLE `tb_mahasiswa` (
   `nim` varchar(25) COLLATE latin1_general_ci NOT NULL,
   `nama_mh` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `jenis_kelamin` enum('Laki-Laki','Perempuan') COLLATE latin1_general_ci DEFAULT NULL,
@@ -126,7 +126,6 @@ INSERT INTO `tb_pengguna_histori` (`kd_histori`, `nm_pengguna`, `keterangan`, `t
 (7, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:53:53'),
 (8, 'admin', 'Barusan mengubah status : \'Aktif\', data pengguna dengan nama : \'JeanRiko\'.', '2022-12-17 22:54:03'),
 (9, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:54:15');
-(10, 'GustinoHuang', 'Pengguna ini barusan login', '2023-06-17 15:06:15');
 --
 -- Indexes for dumped tables
 --
