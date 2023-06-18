@@ -19,64 +19,61 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `coba`
+-- Database: `college`
 --
-CREATE DATABASE IF NOT EXISTS `coba` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci;
-USE `coba`;
+CREATE DATABASE IF NOT EXISTS `college` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci;
+USE `college`;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_coba`
+-- Struktur dari tabel `tb_mahasiswa`
 --
 
-DROP TABLE IF EXISTS `tb_coba`;
-CREATE TABLE `tb_coba` (
-  `kode` varchar(25) COLLATE latin1_general_ci NOT NULL,
-  `nama` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
+DROP TABLE IF EXISTS `tb_mahasiswa`;
+CREATE TABLE `tb_mahasiwa` (
+  `nim` varchar(25) COLLATE latin1_general_ci NOT NULL,
+  `nama_mh` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `jenis_kelamin` enum('Laki-Laki','Perempuan') COLLATE latin1_general_ci DEFAULT NULL,
   `tgl_lahir` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
--- Dumping data untuk tabel `tb_coba`
+-- Dumping data untuk tabel `tb_mahasiswa`
 --
 
-INSERT INTO `tb_coba` (`kode`, `nama`, `jenis_kelamin`, `tgl_lahir`) VALUES
-('A-1', 'Peter Parker', 'Laki-Laki', '2000-03-10'),
-('A-2', 'John Cena', 'Laki-Laki', '1983-03-10'),
-('A-3', 'Undertaker', 'Laki-Laki', '1978-03-12'),
-('A-4', 'Lara Croft', 'Perempuan', '1983-03-10'),
-('A-5', 'Emma Watson', 'Perempuan', '1983-03-10'),
-('A-6', 'TES input', 'Laki-Laki', '1980-11-21');
+INSERT INTO `tb_mahasiswa` (`nim`, `nama_mh`, `jenis_kelamin`, `tgl_lahir`) VALUES
+('21010101', 'Peter B. Parker', 'Laki-Laki', '2001-08-14'),
+('21010204', 'Barry Allen', 'Laki-Laki', '2000-02-07'),
+('21010309', 'Kara Zor-El', 'Perempuan', '1997-07-20'),
+('21010416', 'Takeru Satou', 'Laki-Laki', '1998-03-12'),
+('21010525', 'Noa Tsurushima', 'Perempuan', '2002-04-11'),
+('21010636', 'TES input', 'Perempuan', '1999-06-24');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_pendidikan`
+-- Struktur dari tabel `tb_dosen`
 --
 
-DROP TABLE IF EXISTS `tb_pendidikan`;
-CREATE TABLE `tb_pendidikan` (
-  `kd_pendidikan` int(10) UNSIGNED NOT NULL,
-  `nama_instansi` varchar(150) COLLATE latin1_general_ci DEFAULT NULL,
-  `range_tahun` varchar(100) COLLATE latin1_general_ci DEFAULT NULL,
-  `jurusan` varchar(100) COLLATE latin1_general_ci DEFAULT NULL
+DROP TABLE IF EXISTS `tb_dosen`;
+CREATE TABLE `tb_dosen` (
+  `nidn` varchar(10) COLLATE latin1_general_ci NOT NULL,
+  `nama_ds` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `no_telp` varchar(25) COLLATE latin1_general_ci DEFAULT NULL,
+  `mata_kuliah` varchar(50) COLLATE latin1_general_ci DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Struktur dari tabel `tb_pengalaman_kerja`
+-- Dumping data untuk tabel `tb_dosen`
 --
 
-DROP TABLE IF EXISTS `tb_pengalaman_kerja`;
-CREATE TABLE `tb_pengalaman_kerja` (
-  `kd_pengalaman` int(10) UNSIGNED NOT NULL,
-  `nama_instansi` varchar(150) COLLATE latin1_general_ci DEFAULT NULL,
-  `jabatan_terakhir` varchar(150) COLLATE latin1_general_ci DEFAULT NULL,
-  `terakhir_bekerja` year(4) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+INSERT INTO `tb_dosen` (`nidn`, `nama_ds`, `no_telp`, `mata_kuliah`) VALUES
+('9137528460', 'Joseph Joestar', '628126699269', '1960-08-24'),
+('9238028465', 'Hiratsuka Shizuka', '628121626671', '1985-05-25'),
+('9147027435', 'Kisuke Uehara', '628127644855', '1965-10-20'),
+('9248527360', 'Irina Jelavic', '628224488660', '1985-12-24'),
+('9999999999', 'TES input', '6289999999999', '1999-09-09');
 
 -- --------------------------------------------------------
 
@@ -122,49 +119,29 @@ CREATE TABLE `tb_pengguna_histori` (
 
 INSERT INTO `tb_pengguna_histori` (`kd_histori`, `nm_pengguna`, `keterangan`, `tgl_wkt`) VALUES
 (1, 'Jeanriko', 'Pengguna ini barusan login', '2022-12-16 11:31:58'),
-(2, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-16 11:33:13'),
-(3, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-16 11:42:10'),
-(4, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 13:58:24'),
-(5, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 21:06:01'),
-(6, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 21:07:59'),
-(7, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 21:10:22'),
-(8, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 21:17:21'),
-(9, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 21:18:37'),
-(10, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:13:03'),
-(11, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:14:21'),
-(12, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:32:16'),
-(13, 'JeanRiko', 'Barusan mengubah status : \'Suspend\', data pengguna dengan nama : \'operator\'.', '2022-12-17 22:32:29'),
-(14, 'JeanRiko', 'Barusan mengubah status : \'Aktif\', data pengguna dengan nama : \'operator\'.', '2022-12-17 22:32:38'),
-(15, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:48:07'),
-(16, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:48:10'),
-(17, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:48:26'),
-(18, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:48:52'),
-(19, 'admin', 'Barusan mengubah status : \'Suspend\', data pengguna dengan nama : \'JeanRiko\'.', '2022-12-17 22:51:59'),
-(20, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:53:53'),
-(21, 'admin', 'Barusan mengubah status : \'Aktif\', data pengguna dengan nama : \'JeanRiko\'.', '2022-12-17 22:54:03'),
-(22, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:54:15');
-
+(2, 'JeanRiko', 'Barusan mengubah status : \'Suspend\', data pengguna dengan nama : \'operator\'.', '2022-12-17 22:32:29'),
+(3, 'JeanRiko', 'Barusan mengubah status : \'Aktif\', data pengguna dengan nama : \'operator\'.', '2022-12-17 22:32:38'),
+(4, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:48:07'),
+(6, 'admin', 'Barusan mengubah status : \'Suspend\', data pengguna dengan nama : \'JeanRiko\'.', '2022-12-17 22:51:59'),
+(7, 'admin', 'Pengguna ini barusan login', '2022-12-17 22:53:53'),
+(8, 'admin', 'Barusan mengubah status : \'Aktif\', data pengguna dengan nama : \'JeanRiko\'.', '2022-12-17 22:54:03'),
+(9, 'JeanRiko', 'Pengguna ini barusan login', '2022-12-17 22:54:15');
+(10, 'GustinoHuang', 'Pengguna ini barusan login', '2023-06-17 15:06:15');
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tb_coba`
+-- Indeks untuk tabel `tb_mahasiswa`
 --
-ALTER TABLE `tb_coba`
-  ADD PRIMARY KEY (`kode`);
+ALTER TABLE `tb_mahasiswa`
+  ADD PRIMARY KEY (`nim`);
 
 --
--- Indeks untuk tabel `tb_pendidikan`
+-- Indeks untuk tabel `tb_dosen`
 --
-ALTER TABLE `tb_pendidikan`
-  ADD PRIMARY KEY (`kd_pendidikan`);
-
---
--- Indeks untuk tabel `tb_pengalaman_kerja`
---
-ALTER TABLE `tb_pengalaman_kerja`
-  ADD PRIMARY KEY (`kd_pengalaman`);
+ALTER TABLE `tb_dosen`
+  ADD PRIMARY KEY (`nidn`);
 
 --
 -- Indeks untuk tabel `tb_pengguna`
@@ -183,16 +160,8 @@ ALTER TABLE `tb_pengguna_histori`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tb_pendidikan`
+-- AUTO_INCREMENT untuk tabel `tb_mahasiswa`
 --
-ALTER TABLE `tb_pendidikan`
-  MODIFY `kd_pendidikan` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT untuk tabel `tb_pengalaman_kerja`
---
-ALTER TABLE `tb_pengalaman_kerja`
-  MODIFY `kd_pengalaman` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pengguna_histori`
