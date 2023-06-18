@@ -69,11 +69,11 @@ CREATE TABLE `tb_dosen` (
 --
 
 INSERT INTO `tb_dosen` (`nidn`, `nama_ds`, `no_telp`, `mata_kuliah`) VALUES
-('9137528460', 'Joseph Joestar', '628126699269', '1960-08-24'),
-('9238028465', 'Hiratsuka Shizuka', '628121626671', '1985-05-25'),
-('9147027435', 'Kisuke Uehara', '628127644855', '1965-10-20'),
-('9248527360', 'Irina Jelavic', '628224488660', '1985-12-24'),
-('9999999999', 'TES input', '6289999999999', '1999-09-09');
+('9137528460', 'Joseph Joestar', '628126699269', 'Bahasa Indonesia'),
+('9238028465', 'Hiratsuka Shizuka', '628121626671', 'Pemograman Web'),
+('9147027435', 'Kisuke Uehara', '628127644855', 'Pancasila'),
+('9248527360', 'Irina Jelavic', '628224488660', 'Statistika'),
+('9999999999', 'TES input', '6289999999999', 'Sistem Informasi');
 
 -- --------------------------------------------------------
 
